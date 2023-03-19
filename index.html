@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day Night Theme</title>
+
+    <style>
+        body{
+            background-color: beige;
+        }
+        .container{
+            height: 450px;
+            width: 300px;
+            border: 1px solid black;
+            background-color: white;
+            display: block;
+            margin: 30px auto;
+            border-radius: 30px;
+            box-shadow: 1px 1px 5px red;
+        }
+        .btnsun{
+            display:inline-block;
+            margin-left: 730px;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+        .btnmoon{
+            display:inline-block;
+            background: none;
+            border: none;
+            cursor: pointer;
+            
+        }
+        .sun{
+            height: 450px;
+            width: 300px;
+            border: 1px solid black;
+            display: block;
+            margin: 30px auto;
+            border-radius: 30px;
+            box-shadow: 1px 1px 5px red;
+            background-color: yellow;
+        }
+        .moon{
+             height: 450px;
+            width: 300px;
+            border: 1px solid black;
+            display: block;
+            margin: 30px auto;
+            border-radius: 30px;
+            box-shadow: 1px 1px 5px red;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container" id="container"></div>
+
+        <button class="btnsun" onclick="sun()">☀️</button>
+        <button class="btnmoon"onclick="moon()">🌑</button>
+
+
+        <script>
+            function sun(){
+                const element=document.getElementById("container");
+                element.className="sun";
+            }
+            function moon(){
+                const element=document.getElementById("container");
+                element.className="moon";
+            }
+        </script>
+    
+
+    
+</body>
+</html>
